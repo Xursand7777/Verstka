@@ -171,14 +171,17 @@
 }
 
 .subnav {
+  display: none;
   @include tablet {
     display: none;
   }
 }
 
 .header__subnav-text {
+  display: none;
 
   @include tablet {
+    display: block;
     position: absolute;
     top: 109px;
     right: 45px;
