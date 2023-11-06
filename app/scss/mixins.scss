@@ -1,0 +1,44 @@
+
+  @mixin tablet {
+   @media(min-width: $tablet){
+     @content;
+   }
+  }
+
+  @mixin desktop {
+    @media(min-width: $desktop){
+      @content;
+    }
+  }
+
+  @mixin media($media-size){
+    @media(min-width: $media-size){
+      @content;
+    }
+  }
+
+  @mixin font($font-size, $line-height, $font-weight: null, $font-family: var(--basic-font)) {
+    font: $font-weight #{$font-size}/#{$line-height} $font-family;
+  }
+
+  //
+  //body{
+  //  background-color: green;
+  //  @include media($tablet){
+  //    background-color: red;
+  //  }
+  //
+  //  @include media($desktop){
+  //    background-color: blue;
+  //  }
+  //
+  //  //@include tablet {
+  //  //  background-color: red;
+  //  //}
+  //  //
+  //  //@include desktop {
+  //  //  background-color: blue;
+  //  //}
+  //
+  //
+  //}

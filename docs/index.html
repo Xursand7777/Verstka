@@ -5,41 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1652194814284">
+    <link rel="stylesheet" href="css/main.css?t=1699192112765">
+
 </head>
 
 <body>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clock"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-    </svg>
+<!--    <svg>-->
+<!--        <use xlink:href="img/icons/sprite.svg#clock"></use>-->
+<!--    </svg>-->
+
     <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
+    <div class="page">
         <!-- подключаем шапку -->
-        <header>
-    Шапка сайта
+        <header class="header">
+   <div class="header__container">
+     <div class="header__top">
+       <div class="header__nav-wrapper">
+         <div class="header__logo">
+           <picture class="header__logo-pic">
+             <source class="header__logo-img" srcset="img/logo/mishka-logo-desktop.svg" type="image/svg+xml" media="(min-width: 1150px)">
+             <source class="header__logo-img" srcset="img/logo/mishka-logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
+             <img class="header__logo-img" src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Лого">
+           </picture>
+         </div>
+         <button aria-label="Открыть меню." type="button" class="header__burger _active js-burger">
+           <span class="header__burger-line"></span>
+         </button>
+         <div class="header__nav">
+           <nav class="nav">
+             <ul class="nav__list">
+               <li class="nav__item">
+                 <a class="nav__link" href="#">Каталог товаров</a>
+               </li>
+               <li class="nav__item">
+                 <a class="nav__link" href="#">Вязание на заказ</a>
+               </li>
+             </ul>
+           </nav>
+           <div class="header__subnav">
+             <nav class="subnav">
+               <ul class="nav__list">
+                 <li class="nav__item">
+                   <a class="nav__link" href="#">Новые поступления</a>
+                 </li>
+                 <li class="nav__item">
+                   <a class="nav__link" href="#">Распродажа</a>
+                 </li>
+               </ul>
+             </nav>
+             <p class="header__subnav-text">Бесплатная доставка по России</p>
+           </div>
+           <div class="header__controls">
+             <ul class="header__controls-list">
+               <li class="header__controls-item">
+                 <a class="header__controls-link" href="#">
+                   <svg width="18" height="18" class="header__controls-icon" >
+                     <use xlink:href="img/icons/sprite.svg#search"/>
+                   </svg>
+                   <span class="header__controls-text header__controls-text--hidden"> Поиск по сайту </span>
+                 </a>
+               </li>
+               <li class="header__controls-item">
+                 <a class="header__controls-link" href="#">
+                   <svg width="21" height="18" class="header__controls-icon" >
+                     <use xlink:href="img/icons/sprite.svg#cart"/>
+                   </svg>
+                   <span class="header__controls-text"> Корзина: пока пуста</span>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+
+
+     </div>
+   </div>
 </header>
 
-        <div class="test__content">
-            <img class="test__img" src="img/mentor.jpg" alt="mentor picture">
-            <div class="test__pic"></div>
-        </div>
+        
 
         <!-- подключаем подвал -->
-        <footer>
-    Подвал сайта
-</footer>
+        <!--<footer>-->
+<!--  -->
+<!--</footer>-->
 
     </div>
 
+     <picture>
+       <source srcset="img/Desktop.jpg" type="image/jpg" media="(min-width: 1150px)" />
+       <source srcset="img/Tablet.jpg" type="image/jpg" media="(min-width: 768px)" />
+       <img class="qwerty" src="img/Tablet.jpg" alt="">
+     </picture>
 
+
+     <style>
+       .qwerty{
+         position: fixed;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: 999;
+         pointer-events: none;
+         opacity: .6;
+         display: none;
+       }
+     </style>
     <!-- подключаем js -->
-    <script src="js/main.js?t=1652194814284"></script>
+    <script src="js/main.js?t=1699192112765"></script>
 </body>
 
 </html>

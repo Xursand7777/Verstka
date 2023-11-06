@@ -2,4 +2,19 @@
 $body-bg: #ff55;
 
 //fonts
-$basic-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+
+:root {
+  --basic-font: OpenSans, Arial, sans-serif;
+}
+
+// colors
+
+$primary-color: #63D1BB;
+$secondary-color: #56C3B2;
+$white: #fff;
+$black: #000000;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1150px;
+
